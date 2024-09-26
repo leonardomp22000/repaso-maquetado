@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="posiciones">
+      <div class="box posicionRelativa cajaRelativa">1</div>
+      <div class="box boxAzul posicionFixed">2</div>
+      <div class="box posicionAbsoluta boxGreen cajaAbsoluta">3</div>
+
+      <!--Si encuentra un contenedor relativo papa se va a posicionar segun su elemento padre-->
+      <div class="posicionRelativa contenedorRelativo">
+        <div class="box posicionAbsoluta boxGreen cajaAbsoluta">3</div>
+      </div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+
+      <section class="stickyContainer">
+        <div class="posicionSticky">
+          Seccion Stick
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

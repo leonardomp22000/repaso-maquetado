@@ -1,0 +1,49 @@
+/*La funcion de  scroll-behavior: smooth; es hacer mas suave el bajar con una rederencia # */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1c1e1f;
+    padding: 5px 40px;
+}
+
+p{
+    color: #d1cdc7;
+    
+    
+} 
+
+.titulos{
+    color: #d1cdc7;
+   
+}
+a, ol{
+    color: #117a37;
+    text-decoration: none;
+    
+}
+.subtitulos{
+    color:  #d1cdc7;
+    text-decoration: none;
+    font-weight: 900;
+}
+.subtitulos:hover {
+    text-decoration: underline;
+}
+ul{
+    color: #d1cdc7 ;
+}
+.und li a:hover{
+    color: #1ED88C ;
+}
+.und li:hover{
+    color: #1ED88C ;
+}
+li{
+    padding: 3px;
+}
+
+
+
+/* Font weight se cuenta del 100 al 900*/

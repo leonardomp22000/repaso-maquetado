@@ -1,0 +1,108 @@
+/*
+outline: solid red
+Propiedad para debugear el lienzo para saber por que un elemento no queda como se desea o se sale de ciertos limites
+*/
+
+/*
+display: inblock abarcan el 100% del area disponible
+display: inline Son los elementos como el span que se ponen uno a la derecha del otro
+display: inlineblock  Se ponen los blques uno a un lado del otro como los span, pero en bloques
+*/
+
+
+/*
+justify-content: 
+space-around
+flex-end
+flex-start
+center
+space-between
+space-evenly
+
+*/
+
+
+/*Cuando trabajamos con filas el align-content determina como se distribuyen esas filas verticalmente */
+/*Contiene todas las propuedades que justify content*/
+/* align-content:
+center; Se encarga de centrar las filas veticalmente
+*/
+
+/*Cuando se trabaja con el eje principal para alinear los elementos se usa el 
+justify-content
+y cuando se trabaja con el eje cruzado se usa el align-content
+*/
+
+/*El eje principal se definira dependiendo de como se defina el flex-direction, si este es
+row, el eje principal sera horizontal, y si es column sera el vertial. 
+El eje principal siempre sera paralelo a la direccion de flex-direction*/
+
+
+/*align-items es una propiedad que permite mover los elementos a traves del eje cruzado */
+/* Es una propiedad completamente diferente a align-content y a justify-content, este no depende 
+si es wrap o no, solo depende si es contenedor flexbox*/
+
+
+
+/*align-content, justify-content, align-items usan las mismas propiedades
+space-around
+flex-end
+flex-start
+center
+space-between
+space-evenly
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid red;
+}
+.containerFlex{
+    display: flex;
+    /*Cuando se trabaje con filas se aplica de la siguiente forma */
+    flex-direction:row ;
+    /* Se distribuyen de forma horizontal*/
+    justify-content: center;
+
+ /*   align-items: center; */
+    /* Se distribuyen de forma vertical*/
+    flex-wrap: wrap;
+
+    /* Solo cuando se activa el wrap se activa*/
+    /* Se distribuyen tomando en cuenta el eje cruzado */
+    align-content:flex-start;
+}
+
+
+.containerFlexCol{
+    display: flex;
+    flex-direction: column;
+    /*Se distribuyen de forma vertical*/
+    justify-content: space-evenly;
+
+    /*Movemos los elementos en el eje cruzado. No depende de wrap*/
+    align-items: center;
+    /*Movemos los elementos en el eje princiapal. No depende de wrap*/
+    justify-content: center;
+
+   /* flex-wrap: wrap;
+    /*Depende de wrap y ayuda a acomodar los elemtntos en el eje cruzado.....*/
+    /*align-content: space-evenly; */
+}
+.cajaRoja {
+    width: 100px;
+    height: 100px;
+    background-color: #fb7185;
+   
+    font-weight: 900;
+    color: #f1f5f9;
+    text-align: center;
+    border: 10px solid #e11d48;
+    border-radius: 10px;
+    margin: 5px 0px;
+}

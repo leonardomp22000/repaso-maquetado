@@ -1,0 +1,43 @@
+body{
+    background-color: #1c1e1f;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+}
+/* Font weight se cuenta del 100 al 900*/
+.parrafo-azul{
+    color: blue;
+    font-weight: 600;
+    font-size: 28px;
+
+}
+
+#parrafo-rojo {
+    color: red;
+    font-size: 32px;
+}
+#parrafo-morado {
+    color: purple
+}
+div {
+    border: 1px solid red;
+    width: 160px;
+    height: 50px;
+    
+}
+/* Se afecta a todos los div que tengan la clase contenedorNegro*/
+div.contenedorNegro  {
+    background-color: black;
+    color: white;
+}
+/* Se especifica que dentro de todos los div que tengan la clase contenedor negro se va a afectar a 'a' en las propiedades*/
+div.contenedorNegro a {
+    color: white;
+}
+/* Se afecta a cualquier elemento que tenga la clase contenedor negro*/
+.contenedorNegro {
+    padding: 20px;
+    border:  1px solid red;
+}

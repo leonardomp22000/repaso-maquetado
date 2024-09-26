@@ -1,0 +1,49 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: gray;
+}
+
+.card {
+  background-color: #ef7a2e;
+  color: #f9ceb2;
+  margin: 10px;
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+
+  justify-content: center;
+  gap: 1rem;
+}
+.flexContainer {
+  display: flex;
+}
+
+.flexColumn{
+    flex-direction: column;
+}
+.card > div {
+    font-size: 2rem;
+  
+}
+
+.flexContainerProperties{
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red;
+}
+.boxCard{
+    width: 35rem;
+    height: 30rem;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,36 @@
+.contenedor {
+  border: 1px solid red;
+  width: 370px;
+  margin: 0 auto;
+}
+
+.caja {
+  background-color: beige;
+  width: 350px;
+  height: 100px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px;
+}
+#caja1::before {
+  content: "💬";
+}
+#caja1::after {
+  content: "😍";
+}
+
+#caja2::before {
+  content: "💬";
+}
+
+#caja2::after {
+  content: "🤔";
+}
+
+#caja3::before {
+  content: "💬";
+}
+
+#caja3::after {
+  content: "👏";
+}

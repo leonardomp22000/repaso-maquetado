@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="./pages/pseudoselectores.html">Ir a pseudoelementos </a>
+    <section id="selectorHermano">
+      <h1>Titulo principal</h1>
+      <p>Parrafo contiguo al titulo para aplicar "id="SelectorHermano" h1+p"</p>
+
+      <p>
+        EL segundo parrafo no obtiene los estilos, ya que no es hermano contiguo
+        al titulo
+      </p>
+    </section>
+
+    <!-- Selector hermano general -->
+    <section id="selectorHermanoGeneral">
+      <h2>Selector Hermano General</h2>
+      <h5>Selector hermano General</h5>
+      <button>click me</button>
+      <span>Los elementos intermedios no importa (span)</span>
+      <button>Otro boton 1</button>
+      <div>
+        <button>Este ya no es hermano por que esta dentro de un div</button>
+      </div>
+    </section>
+
+    <!--Selector Hijo-->
+    <section id="selectorHijo">
+      <h2>Selector hijo</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        similique quas blanditiis natus rem consectetur, veniam beatae quia
+        quidem impedit. Sed eius blanditiis tempora qui debitis illum autem,
+        nihil distinctio?
+      </p>
+      <button>Este es un boton</button>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, veniam.
+        Doloribus consequuntur ad maiores optio voluptas odit harum. Tempora,
+        libero. Tempore hic culpa quam et impedit laudantium qui, eius
+        provident!
+      </p>
+      <div>
+        <p>
+          ESte parrafo ya no recibe los estilos por que el parrafo esta dentro
+          de un div
+        </p>
+      </div>
+
+      <div>
+        <a href="">Enlace que esta dentro del div</a>
+        <a href="">Segundo enlace dentro del div</a>
+      </div>
+      <div><a href="">Segundo enlace</a></div>
+      <div>
+        <div>
+          <a href=""
+            >Enlace de un div dentro de otro div ya no aplican estilos</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Selector de atributos-->
+    <section id="selectorAtributo">
+      <a href="https://www.google.com/">google.com</a>
+      <a href="https://kodemia.mx/">kodemia.com</a>
+      <input type="text" name="primerNombre" placeholder="FirstName" />
+    </section>
+
+
+
+ 
+  </body>
+</html>

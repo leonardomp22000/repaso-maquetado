@@ -1,0 +1,125 @@
+<!-- Comentarios -->
+<!---->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica 1</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Dentro de la etiqueta style se ponen las clases del css-->
+    <!--p es un selector que afecta a todos los parrafos en general de la seccion-->
+    <!-- La etiqueta styles siempre se pone en head-->
+    <style>
+      p {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Estilos en linea. Son complicados de mantener-->
+    <h1 style="color: blue">Terminos de uso de Spotify</h1>
+    <h4>Efectivo a partir de marzo 24 de 2023</h4>
+
+    <!-- Lista ordenada con ol y con ul es lista desordenada (sin numeracion)-->
+    <!-- li es para cada elemento que se renderiza-->
+    <ol>
+      <li>
+        <a
+          href="https://www.spotify.com/mx/legal/end-user-agreement/#1-introducci%C3%B3n"
+        >
+          Introducción</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.spotify.com/mx/legal/end-user-agreement/#3-el-uso-del-servicio-de-spotify"
+          >El servicio de Spotify que proporcionamos</a
+        >
+      </li>
+
+      <li>
+        <a
+          href="https://www.spotify.com/mx/legal/end-user-agreement/#3-el-uso-del-servicio-de-spotify"
+          >El uso del Servicio de Spotify</a
+        >
+      </li>
+
+      <li>
+        <a
+          href="https://www.spotify.com/mx/legal/end-user-agreement/#4-derechos-de-propiedad-intelectual-y-de-contenido"
+          >Derechos de propiedad intelectual y de contenido</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.spotify.com/mx/legal/end-user-agreement/#5-servicio-de-atenci%C3%B3n-al-cliente-informaci%C3%B3n-preguntas-y-quejas"
+          >Servicio de atencion al cliente, informacion, preguntas y quejas</a
+        >
+      </li>
+
+      <li>
+        <a
+          href="https://www.spotify.com/mx/legal/end-user-agreement/#6-problemas-y-conflictos"
+          >Problemas y conflictos</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.spotify.com/mx/legal/end-user-agreement/#7-acerca-de-estos-t%C3%A9rminos"
+          >Acerca de estos Terminos</a
+        >
+      </li>
+    </ol>
+
+    <h2>1. Introduccion</h2>
+    <p>
+      Lea atentamente los Términos de uso (los "Términos"), ya que rigen el uso
+      de los servicios personalizados de Spotify (incluido el acceso a los
+      mismos) para escuchar música y otros contenidos, incluidos todos los
+      sitios web y aplicaciones de software que incorporan los Términos o se
+      vinculan a ellos (en conjunto, el "Servicio de Spotify") y toda la música,
+      los videos, los podcasts u otro material disponible en el Servicio de
+      Spotify (el "Contenido").
+    </p>
+    <p>
+      El uso del Servicio de Spotify puede estar sujeto a otros términos y
+      condiciones proporcionados por Spotify, los que se incorporan a estos
+      Términos mediante esta referencia.
+    </p>
+    <p>
+      Al registrarse en el Servicio de Spotify, o utilizarlo, usted acepta los
+      Términos. Si no está de acuerdo con los Términos, no debe utilizar el
+      Servicio de Spotify ni acceder a cualquier Contenido.
+    </p>
+    <h5>Proveedor de servicios</h5>
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+    </ul>
+
+    <p class="parrafo-azul">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. At doloribus
+      assumenda nemo eveniet nam corporis doloremque quasi dolorum vel eligendi
+      eum eius esse et tempora dolorem error officia, repellendus deserunt?
+    </p>
+    <!--Las etiquetas pueden tener ambos atributos, clases y id, teniendo la jerarquia como sigue-->
+    <!-- id, Clase, selector de etiqueta. Siendo el id el que tiene mas prioridad -->
+    <ul class="contenedorNegro">
+      <li class="parrafo-azul" id="parrafo-morado">
+        Elemento con selector de clase 1
+      </li>
+      <li>Elemento con selector de clase 2</li>
+    </ul>
+
+    <p id="parrafo-rojo">Parrafo con selector id</p>
+
+    <div>
+      <a href="#">Enlace 1</a>
+    </div>
+    <div class="contenedorNegro">
+      <a href="#">Enlace 1</a>
+    </div>
+  </body>
+</html>

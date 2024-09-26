@@ -1,0 +1,115 @@
+body{
+    font-family: R;
+}
+#selectorHermano h1 + p {
+  color: red;
+  font-size: 28px;
+}
+
+/* Selector hermano general */
+/*Los estilos se aplican atodos los botones hermanos de h5 */
+#selectorHermanoGeneral h5 ~ button {
+  background-color: blue;
+  color: white;
+}
+
+/* Todos los parrafos que son hijos de la seccion tendran los estilos*/
+
+#selectorHijo > p {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+/*El simbolo > se refiere a todos los hijos de la seccion, y se puede ir por niveles aumentando la especificidad*/
+#selectorHijo > div > a {
+  color: red;
+  font-size: 30px;
+}
+
+/*Selector de atributo */
+/*Abarca todos los niveles posibles, si el atributo coincide entonces se cambian los estilos*/
+a[href="https://www.google.com/"]
+{
+  color: green;
+}
+
+input[name="primerNombre"] {
+  background-color: black;
+}
+
+/*Agrupacion de selectores
+#selectorHermano,
+#selectorHermanoGeneral,
+#selectorHijo,
+#selectorAtributo {
+  background-color: #e3e3e3;
+  width: 600px;
+  margin: 20px;
+  padding: 20px;
+}
+*/
+section {
+  background-color: #e3e3e3;
+  width: 600px;
+  margin: 20px;
+  padding: 20px;
+}
+
+/*El efecto Hover puede ser aplicado a botones, imagenes la etiqueta a tiene los siguientes 
+atributos o pseudoelementos: 
+a:visited  Para ver si ya ha sido visitado
+a:link     Para modificar el enlace como tal
+a:active   Cuando se le da clik se activa cambiando el color o lo que se le haga programado
+:hover{
+filter: sepia() Funciona para poner el efecto sepia, se pueden usar diferentes filtros y cambiar la intensidad con el numero de parametro
+}
+*/
+
+.listaCajas{
+    list-style: none;
+}
+.listaCajas li{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    margin: 5px;
+    background-color: aqua;
+    text-align: center;
+   
+}
+
+/* Pseudoselector para el primer hijo*/
+.listaCajas li:first-child {
+  background-color: purple;
+}
+
+/*Pseudo selector para el ultimo hijo*/
+.listaCajas li:last-child{
+  background-color: red;
+}
+
+/* Se selecciona el que se quiera de acuerdo a su index */
+.listaCajas li:nth-child(3){
+  background-color: green;
+}
+
+/* Comienza a contar el index de abajo hacia arriba*/
+.listaCajas li:nth-last-child(2){
+  border-radius: 50%;
+}
+/*Puede ser cualquier serie de elementos consecutivos mientras tengan un elemento padre, esto puede ser aplicado*/
+
+/*Agrega elementos antes de lo que se renderiza*/
+.before::before{
+  content: "Hola ";
+}
+
+/*Analogo a el before*/
+.after::after{
+  content: " Hola";
+}
+
+/*Hace la primera letra en mayuscula como en los libros*/
+.firstLetter::first-letter{
+  font-size: 45px;
+}

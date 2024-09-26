@@ -1,0 +1,90 @@
+/* Tipos de posiciones
+1- Static (por defecto)
+2- relative (tomando como referencia top y left para posicionar elementos)
+3- fixed 
+4- absolute
+5- sticky
+En todas las posiciones menos en la static se pueden sobreponer los elementos
+*/
+
+
+/*Sticky es para hacerlo fixed mientras esta dentro de su contenedor padre
+cuando se sale de su seccion*/
+
+
+/* Temas
+1. Posicionamiento
+2. Transiciones y animaciones
+
+*/
+
+/*Tarea pendiente*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    margin: 10px ;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* Posicionamiento */
+/*Posicion relativa*/
+
+.posicionRelativa{
+    position: relative;
+}
+
+.cajaRelativa{
+    top: 0px;
+    left: 0px;
+
+}
+
+/* posicion fixed */
+/* Se usa para una navbar que no se desaparezca cuando se le da scrolldown ya que
+se fija a la ventana del navegador*/
+
+.posicionFixed{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.boxAzul{
+    background-color: blue;
+}
+
+
+/*posicion Absoluta*/
+
+/* Acomoda los elementos en base a  los elementos de la pagina*/
+/*No se queda fija dentro de la pantalla*/
+.posicionAbsoluta{
+    position: absolute;
+}
+
+.boxGreen{
+    background-color: green;
+}
+.cajaAbsoluta{
+    top: 0px;
+    left: 120px;
+}
+
+
+.contenedorRelativo{
+    width: 300px;
+    height: 250px;
+    border: 2px solid red;
+    background-color: gray;
+}

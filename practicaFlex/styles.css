@@ -1,0 +1,179 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/*Propiedad order  */
+
+/*flex-shrink: 1*/
+/*Su valor por defecto es 1, si no se quiere que se encoja entonces su valor debe ser 0 y si quiere que se encoja mas que los demas elementos se pone un numero mayor */
+
+
+/*align-self es para aplicar los cambios a un elemento en especifico y tiene los mismos valores que align-items*/
+
+/*flex-direction y flex-wrap se pueden usar en una sola linea con flex-flow. Example flex-flow: column wrap*/
+.box {
+  background-color: rgb(105, 45, 45);
+  color: aliceblue;
+  border: 10px solid rgb(36, 33, 36);
+  width:  100px;
+  height: 100px;
+
+  text-align: center;
+  align-content: center;
+}
+
+.container {
+  border: 1px solid red;
+  width: 600px;
+  height: 1400px;
+}
+.containerIndividual {
+  border: 1px solid red;
+  width: 400px;
+  height: 400px;
+}
+.FlexStartRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  border: 1px purple solid;
+}
+
+.FlexEndRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  border: 1px purple solid;
+}
+
+.FlexCenterRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px purple solid;
+  align-items: center;
+}
+
+.flexStart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border: 1px purple solid;
+}
+
+.flexSpaceBetween {
+  display: flex;
+  flex-direction: row;
+  border: 1px purple solid;
+  justify-content: space-between;
+}
+
+.flexSpaceAround {
+  display: flex;
+  flex-direction: row;
+  border: 1px purple solid;
+  justify-content: space-around;
+}
+
+.flexSpaceEvenly {
+  display: flex;
+  flex-direction: row;
+  border: 1px purple solid;
+  justify-content: space-evenly;
+}
+
+/* COLUMN*/
+.flexStartColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px purple solid;
+}
+
+.flexEndColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  border: 1px purple solid;
+}
+.flexCenterColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px purple solid;
+  align-items: center;
+}
+
+.flexSpaceBetweenColumn {
+  display: flex;
+  flex-direction: column;
+  border: 1px purple solid;
+  justify-content: space-between;
+}
+
+.flexSpaceAroundColumn {
+  display: flex;
+  flex-direction: column;
+  border: 1px purple solid;
+  justify-content: space-around;
+}
+
+.flexSpaceEvenlyColumn {
+  display: flex;
+  flex-direction: column;
+  border: 1px purple solid;
+  justify-content: space-evenly;
+}
+
+.containerFlexRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px red solid;
+  height: 50%;
+}
+
+.flexContainer{
+  display: flex;
+  flex-direction: row;
+}
+.propiedadesFlex{
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.linea{
+  outline: auto;
+}
+.propiedades {
+  background-color: gray;
+}
+.caja1 {
+  flex-grow: 1;
+  flex-basis: 100px ;
+
+}
+
+.caja2 {
+flex-grow: 2;
+
+}
+.caja3 {
+ flex-grow: 1;
+
+}
+.containerPropiedades {
+  width: 100%;
+  min-height: 500px;
+  gap: 5px;
+}
